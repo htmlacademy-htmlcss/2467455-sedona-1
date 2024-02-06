@@ -103,22 +103,25 @@
         </section>
       </header>
         <section class="selecting">
-          <select class="select-control" aria-label="Сортировка">
+          <h2 class="visually-hidden">Поиск и сортировка</h2>
+          <p class="results">Найдено гостиниц: 38</p>
+          <select class="select-control" aria-label="Поиск и сортировка">
           <option value="popular">Сначала популярные</option>
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
           </select>
           <a href="#" class="button">
-            <span class="visually-hidden">Показать карточки</span>
+            <span class="visually-hidden">Показать карточками</span>
           </a>
           <a href="#" class="button">
-            <span class="visually-hidden">Показать слайды</span>
+            <span class="visually-hidden">Показать сеткой</span>
           </a>
           <a href="#" class="button">
-            <span class="visually-hidden">Показать список</span>
+            <span class="visually-hidden">Показать списком</span>
           </a>
         </section>
         <section class="hotels">
+          <h2 class="visually-hidden">Результат поиска - Мотели</h2>
           <ul class="hotel-list">
             <li class="hotel-list-item">
               <a class="hotel-list-link">
@@ -135,6 +138,8 @@
               <img class="star" src="#" alt="Звездочка обозначающая рейтинг гостиницы">
               <p>Рейтинг: 8,5</p>
             </li>
+          </ul>
+          <ul class="hotel-list">
             <li class="hotel-list-item">
               <a class="hotel-list-link">
                 <img class="hotel-list-img" src="#" alt="Живописный вид издалека на цепочку гор">
@@ -150,6 +155,8 @@
               <img class="star" src="#" alt="Звездочка обозначающая рейтинг гостиницы">
               <p>Рейтинг: 9,2</p>
             </li>
+          </ul>
+          <ul class="hotel-list">
             <li class="hotel-list-item">
               <a class="hotel-list-link">
                 <img class="hotel-list-img" src="#" alt="Вид на большую гору, находящуюся за Мотелем Desert Quail Inn">
@@ -164,6 +171,8 @@
               <img class="star" src="#" alt="Звездочка обозначающая рейтинг гостиницы">
               <p>Рейтинг: 6,9</p>
             </li>
+          </ul>
+          <ul class="hotel-list">
             <li class="hotel-list-item">
               <a class="hotel-list-link">
                 <img class="hotel-list-img" src="#" alt="Живописный вид на гору в обрамлении ночного звездного неба">
@@ -183,21 +192,19 @@
               <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link href="#">2</a>
+              <a class="pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link href="#"">3</a>
+              <a class="pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link href="#">4</a>
+              <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-between" href="#">
-                <span class="visually-hidden">???? страница</span>
-              </a>
+              <a class="pagination-link pagination-between" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link href="#">10</a>
+              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
         </section>
