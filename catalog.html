@@ -98,18 +98,21 @@
               <legend class="services-title">Стоимость,₽:</legend>
             </fieldset>
             <button class="button" type="submit">Применить</button>
-            <button class="button" type="submit">Сбросить</button>
+            <button class="button" type="reset">Сбросить</button>
           </form>
         </section>
       </header>
         <section class="selecting">
           <h2 class="visually-hidden">Поиск и сортировка</h2>
-          <p class="results">Найдено гостиниц: 38</p>
+          <p class="search">Найдено гостиниц:
+            <output class="search-result">38</output>
+          </p>
           <select class="select-control" aria-label="Поиск и сортировка">
           <option value="popular">Сначала популярные</option>
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
           </select>
+          <div class="views">
           <a href="#" class="button">
             <span class="visually-hidden">Показать карточками</span>
           </a>
@@ -119,12 +122,13 @@
           <a href="#" class="button">
             <span class="visually-hidden">Показать списком</span>
           </a>
+        </div>
         </section>
         <section class="hotels">
           <h2 class="visually-hidden">Результат поиска - Мотели</h2>
           <ul class="hotel-list">
             <li class="hotel-list-item">
-              <a class="hotel-list-link">
+              <a class="hotel-list-link" href="#">
                 <img class="hotel-list-img" src="#" alt="Вид на звездное небо в окружении вершин гор">
                 <h3 class="hotel-list-title">Amara Resort & Spa</h3>
               </a>
@@ -138,10 +142,8 @@
               <img class="star" src="#" alt="Звездочка обозначающая рейтинг гостиницы">
               <p>Рейтинг: 8,5</p>
             </li>
-          </ul>
-          <ul class="hotel-list">
             <li class="hotel-list-item">
-              <a class="hotel-list-link">
+              <a class="hotel-list-link" href="#">
                 <img class="hotel-list-img" src="#" alt="Живописный вид издалека на цепочку гор">
                 <h3 class="hotel-list-title">Villas at Poco Diablo</h3>
               </a>
@@ -155,10 +157,8 @@
               <img class="star" src="#" alt="Звездочка обозначающая рейтинг гостиницы">
               <p>Рейтинг: 9,2</p>
             </li>
-          </ul>
-          <ul class="hotel-list">
             <li class="hotel-list-item">
-              <a class="hotel-list-link">
+              <a class="hotel-list-link" href="#">
                 <img class="hotel-list-img" src="#" alt="Вид на большую гору, находящуюся за Мотелем Desert Quail Inn">
                 <h3 class="hotel-list-title">Desert Quail Inn</h3>
               </a>
@@ -171,17 +171,15 @@
               <img class="star" src="#" alt="Звездочка обозначающая рейтинг гостиницы">
               <p>Рейтинг: 6,9</p>
             </li>
-          </ul>
-          <ul class="hotel-list">
             <li class="hotel-list-item">
-              <a class="hotel-list-link">
+              <a class="hotel-list-link" href="#">
                 <img class="hotel-list-img" src="#" alt="Живописный вид на гору в обрамлении ночного звездного неба">
                 <h3 class="hotel-list-title">GreenTree Inn</h3>
               </a>
               <p class="hotel-list-class">Гостиница</p>
               <b class="hotel-list-price">От 1500 ₽</b>
               <a class="hotel-list-button" href="#">Подробнее</a>
-              <button type="button">В Избранное</button>
+              <a class="hotel-list-favorite" href="#">В Избранное</a>
               <img class="star" src="#" alt="Звездочка обозначающая рейтинг гостиницы">
               <img class="star" src="#" alt="Звездочка обозначающая рейтинг гостиницы">
               <p>Рейтинг: 5,0</p>
@@ -208,18 +206,18 @@
             </li>
           </ul>
         </section>
+        <section class="newsletter">
+          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="newsletter-form" action="https://htmlacademy.ru/" method="post">
+            <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">
+              <span class="newsletter-subscribe">Подписаться</span>
+            </button>
+          </form>
+        </section>
     </main>
     <footer class="main-footer">
-      <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://htmlacademy.ru/" method="post">
-          <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
-          </button>
-        </form>
-      </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer-contacts-list">
