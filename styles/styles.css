@@ -360,7 +360,11 @@ body {
 .advantages-item {
   width: 400px;
 }
-.advantages-item {
+.white {
+  width: 100%;
+  display: flex;
+}
+.advantages-item-container {
   width: 400px;
 }
 .advantages-title {
