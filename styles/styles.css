@@ -125,6 +125,12 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+.services-title-catalog {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
 .services-description {
   color: #333333;
 }
@@ -171,6 +177,17 @@ body {
   background-color: #82B3D3;
 }
 .newsletter-subscribe {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.button-newsletter-catalog {
+  background-color: #82B3D3;
+}
+.button-newsletter-subscribe {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -417,6 +434,9 @@ body {
 .newsletter-subscribe {
   padding: 8px 50px;
 }
+.button-newsletter-subscribe {
+  padding: 8px 50px;
+}
 .main-footer {
   width: 1200px;
   margin: 0 auto;
@@ -447,3 +467,29 @@ ul {
 .footer-logo {
   margin-right: 70px;
 }
+.inner-header {
+  width: 1200px;
+  margin: 0 auto;
+}
+.inner-header-title {
+  margin-left: 70px;
+}
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  margin-left: 70px;
+}
+.breadcrumbs-link:last-child {
+  margin-left: 28px;
+}
+.services-catalog {
+  display: flex;
+  flex-direction: row;
+}
+.services-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
