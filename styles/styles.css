@@ -496,7 +496,6 @@ ul {
   justify-content: center;
   margin: 0 70px;
   width: 191px;
-
 }
 .services-filter-group:nth-child(1) {
   padding: 0;
@@ -533,4 +532,61 @@ ul {
 .main-inner {
   width: 1200px;
   margin: 0 auto;
+}
+.hotel-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.hotel-list-item {
+  width: 340px;
+  margin-left: 20px;
+}
+.hotels-container {
+  display: flex;
+  flex-direction: row;
+  width: 340px;
+  flex-wrap: wrap;
+}
+.hotel-list-class {
+  margin: 16px 20px;
+  width: 140px;
+  height: 21px;
+}
+.hotel-list-price {
+  margin: 16px 20px 16px 0px;
+  width: 140px;
+  height: 21px;
+}
+.hotel-list-button {
+  width: 140px;
+  height: 36px;
+  margin: 0 16px 20px 16px;
+}
+.hotel-list-favorite {
+  width: 140px;
+  height: 36px;
+  margin: 0 20px 16px 0;
+}
+.star-container {
+  width: 140px;
+  height: 36px;
+  margin: 0 16px 20px 16px;
+}
+.rating {
+  width: 140px;
+  height: 36px;
+  margin: 0 20px 16px 0;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
