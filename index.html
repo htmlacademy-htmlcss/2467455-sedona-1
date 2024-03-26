@@ -39,8 +39,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-      <section class="hero">
+    <main class="main-container main-index">
+      <div class="page-container">
+        <section class="hero">
         <h1 class="visually-hidden">Курортный городок Седона</h1>
         <img src="images/welcome.svg" width="458px" height="352px" alt="Добро пожаловать в шикарную Седону, потому что Гранд каньен отстой (фраза на английском)">
       </section>
@@ -54,8 +55,10 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item white">
+            <div class="advantages-item-container">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
             <img class="advantages-image" src="images/photo-1.jpg" width="800px" height="385px" alt="Одна из уютных улочек городка Седона">
           </li>
           <li class="advantages-item lightblue">
@@ -71,8 +74,10 @@
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item white">
+            <div class="advantages-item-container">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
             <img class="advantages-image" src="images/photo-2.jpg" width="800px" height="385px" alt="Вид сбоку на мост дьявола">
           </li>
         </ul>
@@ -84,18 +89,18 @@
         <p class="description">Опытный персонал и качественное обслуживание!</p>
         <ul class="services-list">
           <li class="services-item lightblue">
-            <h3 class="services-title">Жильё</h3>
             <img class="icon" src="images/house.svg" width="75px" height="72px" alt="Иконка домика">
+            <h3 class="services-title">Жильё</h3>
             <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="services-item">
-            <h3 class="services-title">Еда</h3>
             <img class="icon" src="images/food.svg" width="74px" height="70px" alt="Иконка бургера">
+            <h3 class="services-title">Еда</h3>
             <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="services-item lightblue">
-            <h3 class="services-title">Сувениры</h3>
             <img class="icon" src="images/present.svg" width="64px" height="76px" alt="Иконка подарка">
+            <h3 class="services-title">Сувениры</h3>
             <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -103,7 +108,7 @@
 
       <section class="appointment">
         <h2 class="appointment-title">Заинтересовались?</h2>
-        <p class="appointment-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="appointment-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
          <a class="appointment-link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
       <section class="newsletter">
@@ -111,11 +116,10 @@
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://htmlacademy.ru/" method="post">
           <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden newsletter-subscribe">Подписаться</span>
-          </button>
+          <button class="button newsletter-button newsletter-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="main-footer">
       <section class="footer-contacts">
