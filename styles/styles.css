@@ -337,6 +337,10 @@ body {
 .field {
   font-family: "PT Sans", sans-serif;
 }
+.main-header {
+  width: 1200px;
+  margin: 0 auto;
+}
 .navigation {
   display: flex;
   width: 1200px;
@@ -467,10 +471,14 @@ ul {
 .footer-logo {
   margin-right: 70px;
 }
-.inner-header {
+.main-inner {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 70px;
+}
+.inner-header {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0 70px;
 }
 .breadcrumbs {
   margin: 0;
@@ -494,22 +502,22 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 70px;
   width: 191px;
 }
 .services-filter-group:nth-child(1) {
   padding: 0;
   width: 150px;
+  margin-right: 70px;
 }
 .services-filter-group:nth-child(2) {
   padding: 0;
-  margin-left: 70px;
   width: 150px;
+  margin-right: 140px;
 }
 .services-filter-group:nth-child(3) {
   padding: 0;
-  margin-left: 140px;
   width: 288px;
+  margin-right: 70px;
 }
 .button-submit {
   padding: 8px 50px;
@@ -529,58 +537,54 @@ ul {
   margin-left: 200px;
   align-self: center;
 }
-.main-inner {
-  width: 1200px;
-  margin: 0 auto;
+.hotels {
+  padding: 0 70px;
 }
 .hotel-list {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
   flex-wrap: wrap;
-  row-gap: 20px;
+  gap: 20px;
+}
+.hotel-list-link {
+  width: 300px;
 }
 .hotel-list-item {
-  width: 340px;
-  margin-left: 20px;
+  width: 300px;
+  padding: 20px;
 }
 .hotels-container {
   display: flex;
   flex-direction: row;
-  width: 340px;
+  width: 300px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .hotel-list-class {
-  margin: 16px 20px;
   width: 140px;
   height: 21px;
 }
 .hotel-list-price {
-  margin: 16px 20px 16px 0px;
   width: 140px;
   height: 21px;
 }
 .hotel-list-button {
   width: 140px;
   height: 36px;
-  margin: 0 16px 20px 16px;
 }
 .hotel-list-favorite {
   width: 140px;
   height: 36px;
-  margin: 0 20px 16px 0;
 }
 .star-container {
   width: 140px;
   height: 36px;
-  margin: 0 16px 20px 16px;
 }
 .rating {
   width: 140px;
   height: 36px;
-  margin: 0 20px 16px 0;
 }
 .pagination {
   display: flex;
