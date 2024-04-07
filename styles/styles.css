@@ -266,6 +266,7 @@ body {
   font-weight: 700;
   text-align: start;
   margin: 0;
+  width: 300px;
 }
 .hotel-list-link {
   text-decoration: none;
@@ -529,6 +530,11 @@ body {
 .button-newsletter-subscribe {
   padding: 8px 50px;
 }
+.newsletter-form {
+  display: flex;
+  width: 684px;
+  margin: 0 auto;
+}
 .main-footer {
   width: 1200px;
   margin: 0 auto;
@@ -676,6 +682,8 @@ ul {
   width: 300px;
   flex-wrap: wrap;
   row-gap: 16px;
+  column-gap: 16px;
+  margin-top: 16px;
 }
 .hotel-list-class {
   width: 140px;
@@ -698,26 +706,53 @@ ul {
   padding: 8px 26px;
   text-align: center;
   margin-right: 20px;
+  display: block;
 }
 .hotel-list-favorite {
   width: 140px;
+  display: block;
   padding: 8px 20px;
   text-align: center;
+  text-wrap: nowrap;
 }
 .star-container {
   width: 140px;
-  height: 36px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+
 }
 .rating {
   width: 140px;
   height: 36px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .pagination {
   display: flex;
   flex-direction: row;
   width: 1200px;
   margin: 0 auto;
-  margin: 0;
+  margin-top: 80px;
   padding: 0;
+}
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 18px;
+  align-items: center;
+}
+.newsletter-catalog {
+  display: block;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
