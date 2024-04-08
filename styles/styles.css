@@ -45,13 +45,14 @@ body {
   line-height: 20px;
   font-weight: 700;
 }
-.desire .navigation-link {
+.link-desire {
   color: #FFFFFF;
   background-color: #756157;
-}
-.desire-container .navigation-link {
   display: table;
   padding: 8px 34px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 16px;
 }
 .hero {
   background-color: #83B3D333;
