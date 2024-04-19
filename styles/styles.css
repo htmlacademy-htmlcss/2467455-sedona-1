@@ -756,4 +756,9 @@ ul {
   padding-top: 96px;
   padding-bottom: 104px;
 }
-
+.hotel-list {
+  display: grid;
+  width: 1060px;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+}
