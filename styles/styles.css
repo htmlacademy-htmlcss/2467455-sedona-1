@@ -40,6 +40,18 @@ body {
   text-decoration: none;
   color: #000000;
 }
+.navigation-link-current {
+  position: relative;
+}
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: -2px;
+  height: 2px;
+  background-color: #756257;
+}
 .link-desire {
   font-size: 16px;
   line-height: 20px;
@@ -51,7 +63,18 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 16px;
-
+  border-radius: 4px;
+  margin-left: 20px;
+}
+.link-desire:hover {
+  background-color: #615048;
+}
+.link-desire:focus {
+  background-color: #615048;
+}
+.link-desire:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 .hero {
   background-color: #83B3D333;
