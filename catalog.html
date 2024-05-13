@@ -64,19 +64,22 @@
               <ul class="services-filter-list">
                 <li class="services-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="basin" checked>
-                    Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="basin" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="services-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="services-filter-item"><label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi">
-                  Wi-Fi
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
                 </li>
               </ul>
@@ -86,25 +89,50 @@
               <ul class="services-filter-list">
                 <li class="services-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="service-group" checked>
-                    Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="service-group" checked>
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label-radio">Гостиница</span>
                   </label>
                 </li>
                 <li class="services-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="service-group">
-                    Мотель
+                    <input class="visually-hidden control-input" type="radio" name="service-group">
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label-radio">Мотель</span>
                   </label>
                 </li>
                 <li class="services-filter-item"><label class="control">
-                  <input class="control-input" type="radio" name="service-group">
-                  Апартаменты
+                  <input class="visually-hidden control-input" type="radio" name="service-group">
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label-radio">Апартаменты</span>
+
                 </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="services-filter-group">
-              <legend class="services-title-catalog">Стоимость,₽:</legend>
+              <legend class="services-title-catalog">Стоимость, ₽:</legend>
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">от</label>
+                    <input class="range-input-from" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input-to" type="number" value="9000" name="max-price">
+                  </label>
+                </div>
+
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="button-filer-left">
             <button class="button-submit" type="submit">Применить</button>
