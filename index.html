@@ -140,7 +140,7 @@
         </a>
       </section>
     </footer>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
       <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -148,14 +148,49 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
+            <div class="field-group">
               <label class="auth-form-label">Дата&nbsp;Заезда:</label>
-              <input class="auth-form-field field" type="date" name="date-in">
-            </p>
-            <p class="field-group">
-              <label class="auth-form-label">Дата&nbsp;Выезда:</label>
-              <input class="auth-form-field field" type="date" name="date-out">
-            </p>
+              <div class="note">
+              <input class="auth-form-field field-counter" type="text" name="date-in">
+              <svg class="field-group-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15"><path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+            <div class="text-field-group first">Мы не можем отправить вас в прошлое.</div>
+          </div>
+        </div>
+            <div class="field-group">
+              <label class="auth-form-label label-day-out">Дата&nbsp;Выезда:</label>
+              <div class="note">
+              <input class="auth-form-field field-counter" type="text" name="date-out">
+              <svg class="field-group-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15"><path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+            <div class="text-field-group second">На эти даты есть свободные номера. Пока есть.</div>
+          </div>
+          </div>
+
+          <div class="counter">
+            <label class="auth-form-label">Взрослые:</label>
+            <div class="counter-container">
+            <div class="counter-adult">
+              <button class="button-adult" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z"/></svg></button>
+              <input class="input-adult" type="text" value="2">
+              <button class="button-adult" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg></button>
+            </div>
+
+
+            <div class="field-group">
+              <label class="auth-form-label label-children">Дети:</label>
+              <div class="button-wrapper">
+                <button class="button-wrapper-button" type="button"><img src="images/letter.png" width="2px" height="12px" alt="Изображение иконки i"></button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="9" fill="none" viewBox="0 0 19 9"><g clip-path="url(#a)"><path fill="#333" d="M9.5 0 19 9H0l9.5-9Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h19v9H0z"/></clipPath></defs></svg>
+                <div class="button-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+              </div>
+
+              <div class="counter-children">
+                <button class="button-children" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z"/></svg></button>
+                <input class="input-children" type="text" value="2">
+                <button class="button-children" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg></button>
+              </div>
+            </div>
+          </div>
+          </div>
             <button class="button auth-form-button" type="submit">Найти</button>
           </form>
         </section>
