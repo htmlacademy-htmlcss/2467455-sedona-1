@@ -77,7 +77,8 @@
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
-                <li class="services-filter-item"><label class="control">
+                <li class="services-filter-item">
+                  <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                   <span class="control-mark"></span>
                   <span class="control-label">Wi-Fi</span>
@@ -102,11 +103,11 @@
                     <span class="control-label-radio">Мотель</span>
                   </label>
                 </li>
-                <li class="services-filter-item"><label class="control">
+                <li class="services-filter-item">
+                  <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="service-group">
                   <span class="control-mark-radio"></span>
                   <span class="control-label-radio">Апартаменты</span>
-
                 </label>
                 </li>
               </ul>
@@ -115,23 +116,24 @@
               <legend class="services-title-catalog">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">от</label>
-                    <input class="range-input-from" type="number" value="0" name="min-price">
-                  </label>
-                  <label class="catalog-filter-label">
-                    до <input class="range-input-to" type="number" value="9000" name="max-price">
-                  </label>
+                  <div class="range-wrapper-input">
+                    <input class="range-input-from" type="number" value="0" placeholder="0" name="min-price" required>
+                    <label class="catalog-filter-label">от</label>
+                  </div>
+                  <div class="range-wrapper-input">
+                    <input class="range-input-to" type="number" value="9000" placeholder="9000" name="max-price" required>
+                    <label class="catalog-filter-label">до</label>
+                  </div>
                 </div>
 
                 <div class="range-scale">
-                  <div class="range-bar">
-                    <button class="range-toggle toggle-min">
+                  <div class="range-bar" style="left:0; width: 226px"></div>
+                    <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button type="button" class="range-toggle toggle-max">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
-                  </div>
                 </div>
               </div>
             </fieldset>
