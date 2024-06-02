@@ -416,6 +416,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
 }
 .select-control {
   color: #333333;
@@ -592,6 +593,20 @@ body {
   width: 1200px;
   margin: 0 auto;
   height: 485px;
+  position: relative;
+}
+.hero::after {
+  position: absolute;
+  content: '';
+  background-image: url("../images/Vector on img.svg");
+  width: 1200px;
+  height: 57px;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .hero img {
   margin: 0 auto;
@@ -604,6 +619,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   height: 261px;
+  margin-bottom: 21px;
 }
 .welcome h2 {
   margin: 0;
@@ -732,10 +748,11 @@ body {
   margin: 20px 362px 54px;
 }
 .field {
-  padding: 14px 345px 14px 8px;
+  padding: 14px 305px 14px 8px;
 }
 .newsletter-subscribe {
-  padding: 8px 50px;
+  width: 232px;
+  padding: 8px 40px;
   border: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -756,7 +773,7 @@ body {
   margin: 0 auto;
 }
 .field {
-  width: 684px;
+  width: 412px;
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
@@ -772,6 +789,7 @@ body {
 }
 .footer-contacts {
   display: flex;
+  padding-top: 10px;
   width: 1060px;
   margin: 0 auto;
   height: 120px;
@@ -801,7 +819,9 @@ body {
 ul {
   list-style-type: none;
 }
-
+.footer-contacts-list-item {
+  width: 48px;
+}
 .footer-contacts-list-item svg {
   color: #83B3D3;
 }
@@ -833,10 +853,10 @@ ul {
   flex-direction: column;
 }
 .inner-header {
-  display: flex;
-  flex-direction: column;
-  min-height: 412px;
+  display: block;
+  min-height: 375px;
   padding: 0 70px;
+  padding-top: 35px;
   background-size: cover;
 }
 .breadcrumbs {
@@ -952,7 +972,7 @@ ul {
   flex-direction: row;
   width: 1060px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .select-control {
   width: 292px;
