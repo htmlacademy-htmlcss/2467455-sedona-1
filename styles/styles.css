@@ -74,7 +74,6 @@ body {
   padding: 8px 34px;
   text-transform: uppercase;
   text-decoration: none;
-  margin-top: 16px;
   border-radius: 4px;
   margin-left: 20px;
 }
@@ -141,6 +140,9 @@ body {
   text-transform: uppercase;
   color: #000000;
   position: relative;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
 }
 .lightblue h3::after {
   position: absolute;
@@ -157,6 +159,7 @@ body {
 }
 .lightblue-services p {
   color: #333333;
+
 }
 .darkblue {
   background-color: rgba(131, 179, 211, 0.2);
@@ -266,6 +269,7 @@ body {
   background-color: #82B3D3;
 }
 .newsletter-subscribe {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -276,6 +280,7 @@ body {
 .button-newsletter-catalog {
   background-color: #82B3D3;
   padding: 8px 50px;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -437,7 +442,6 @@ body {
   color: #333333;
 }
 .hotel-list-price {
-  text-align: right;
   color: #333333;
   font-weight: 400;
 }
@@ -498,7 +502,7 @@ body {
 .newsletter-catalog .newsletter-description {
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
+  color: #333333;
 }
 .newsletter-catalog .newsletter-button {
   background-color: #82B3D3;
@@ -550,7 +554,7 @@ body {
 .logo {
   margin-left: 70px;
   margin-right: 30px;
-  margin-bottom: -6px;
+  margin-bottom: -7px;
 }
 .logo svg {
   display: block;
@@ -564,6 +568,11 @@ body {
 }
 .logo svg:active {
   fill-opacity: 0.9;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navigation-list {
   margin: 0;
@@ -579,10 +588,13 @@ body {
   max-width: 268px;
   margin: 0;
   padding: 0;
-  margin-right: 70px;
+  padding-top: 2px;
+  margin-right: 71px;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 .navigation-user .navigation-link {
   padding: 20px 12px;
@@ -756,6 +768,7 @@ body {
   border: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  cursor: pointer;
 }
 .newsletter-subscribe:hover {
   background-color: #68A2CA;
@@ -972,7 +985,7 @@ ul {
   flex-direction: row;
   width: 1060px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 .select-control {
   width: 292px;
@@ -1012,7 +1025,7 @@ ul {
 .hotels {
   width: 1060px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 .hotel-list {
   display: flex;
@@ -1029,12 +1042,8 @@ ul {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
   border: #E6E6E6 solid 1px;
   border-radius: 4px;
-}
-.hotel-list-item:nth-child(3n) {
-  margin-right: 0;
 }
 .hotels-container {
   display: flex;
@@ -1147,14 +1156,15 @@ ul {
 }
 .newsletter-catalog {
   display: block;
-  padding-top: 96px;
+  padding-top: 55px;
   padding-bottom: 104px;
 }
 .hotel-list {
   display: grid;
   width: 1060px;
   grid-template-columns: 336px 336px 336px;
-  gap: 20px;
+  row-gap: 17px;
+  column-gap: 24px;
 }
 .range-scale {
   position: relative;
@@ -1371,7 +1381,7 @@ ul {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 11px;
+  top: 8px;
   left: 20px;
   width: 20px;
   height: 20px;
@@ -1384,7 +1394,6 @@ ul {
   text-align: center;
 }
 .field-group-svg {
-  position: absolute;
   left: 91%;
   top: 25%;
   opacity: 30%;
@@ -1533,7 +1542,7 @@ ul {
 }
 .input-adult {
   width: 31px;
-  height: 48px;
+  height: 46px;
   padding: 14px, 10px, 14px, 10px;
   background-color: #F2F2F2;
   border: none;
@@ -1544,7 +1553,7 @@ ul {
 }
 .input-children {
   width: 31px;
-  height: 48px;
+  height: 46px;
   padding: 14px, 10px, 14px, 10px;
   background-color: #F2F2F2;
   border: none;
@@ -1554,11 +1563,24 @@ ul {
   text-align: center;
 }
 .field-counter {
-  width: 440px;
+  width: 370px;
   height: 48px;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left:20px;
+  padding-right: 50px;
+}
+.calendar-button {
+  position: absolute;
+  left: 91%;
+  top: 25%;
+  border: none;
+  background-image: none;
+  cursor: pointer;
 }
 .counter-container {
   display: flex;
