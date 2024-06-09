@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -117,7 +124,8 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://htmlacademy.ru/" method="post">
-          <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <label class="visually-hidden" for="newsletter-email">Оформить подписку</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button newsletter-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
@@ -159,20 +167,20 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
-              <label class="auth-form-label">Дата&nbsp;Заезда:</label>
+              <label class="auth-form-label" for="in">Дата&nbsp;Заезда:</label>
               <div class="note">
-              <input class="auth-form-field field-counter" type="text" name="date-in">
-              <button class="calendar-button">
+              <input class="auth-form-field field-counter" id="in" type="text" name="date-in" value="27 апреля 2020" placeholder="27 апреля 2020" required>
+              <button class="calendar-button" type="button" >
                 <svg class="field-group-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15"><path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
               </button>
             <div class="text-field-group first">Мы не можем отправить вас в прошлое.</div>
           </div>
         </div>
             <div class="field-group">
-              <label class="auth-form-label label-day-out">Дата&nbsp;Выезда:</label>
+              <label class="auth-form-label label-day-out" for="out">Дата&nbsp;Выезда:</label>
               <div class="note">
-              <input class="auth-form-field field-counter" type="text" name="date-out">
-              <button class="calendar-button">
+              <input class="auth-form-field field-counter" id="out" type="text" name="date-out" value="1 сентября 2023" placeholder="1 сентября 2023" required>
+              <button class="calendar-button" type="button">
                 <svg class="field-group-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15"><path fill="#000" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path fill="#000" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path fill="#000" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
               </button>
             <div class="text-field-group second">На эти даты есть свободные номера. Пока есть.</div>
@@ -180,17 +188,17 @@
           </div>
 
           <div class="counter">
-            <label class="auth-form-label">Взрослые:</label>
+            <label class="auth-form-label" for="adults">Взрослые:</label>
             <div class="counter-container">
             <div class="counter-adult">
               <button class="button-adult" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" fill-opacity="currentOpacity" d="M3 9v2h14V9H3Z"/></svg></button>
-              <input class="input-adult" type="text" value="2">
+              <input class="input-adult" id="adults" type="text" value="2" required>
               <button class="button-adult" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="currentColor" fill-opacity="currentOpacity" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg></button>
             </div>
 
 
             <div class="field-group">
-              <label class="auth-form-label label-children">Дети:</label>
+              <label class="auth-form-label label-children" for="children">Дети:</label>
               <div class="button-wrapper">
                 <button class="button-wrapper-button" type="button"><img src="images/letter.png" width="2" height="12" alt="Изображение иконки i"></button>
                 <div class="button-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
@@ -198,7 +206,7 @@
 
               <div class="counter-children">
                 <button class="button-children" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="currentColor" fill-opacity="currentOpacity" d="M3 9v2h14V9H3Z"/></svg></button>
-                <input class="input-children" type="text" value="2">
+                <input class="input-children" id="children" type="text" value="2" required>
                 <button class="button-children" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="currentColor" fill-opacity="currentOpacity" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg></button>
               </div>
             </div>
